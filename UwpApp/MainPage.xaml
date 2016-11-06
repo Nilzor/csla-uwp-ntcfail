@@ -6,6 +6,9 @@
     xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
     mc:Ignorable="d">
+    <d:Page.DataContext>
+        <local:PlainClass></local:PlainClass>
+    </d:Page.DataContext>
 
     <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
         <TextBlock x:Name="textBlock1" HorizontalAlignment="Left" Margin="19,32,0,0" TextWrapping="Wrap" Text="Name:" VerticalAlignment="Top"/>

@@ -20,8 +20,6 @@ namespace UwpApp
             set { SetProperty(AgeProperty, value); }
         }
 
-
-
         public static readonly PropertyInfo<DateTime?> DateOfDeathProperty = RegisterProperty<DateTime?>(c => c.DateOfDeath);
         public DateTime? DateOfDeath
         {
