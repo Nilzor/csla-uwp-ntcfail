@@ -4,7 +4,7 @@ using Csla;
 namespace UwpApp
 {
     [Serializable]
-    public sealed class Customer : BusinessBase<Customer>
+    public sealed class CslaClass : BusinessBase<CslaClass>
     {
         public static readonly PropertyInfo<string> NameProperty = RegisterProperty<string>(c => c.Name);
         public string Name
@@ -18,13 +18,6 @@ namespace UwpApp
         {
             get { return GetProperty(AgeProperty); }
             set { SetProperty(AgeProperty, value); }
-        }
-
-        public static readonly PropertyInfo<DateTime?> DateOfDeathProperty = RegisterProperty<DateTime?>(c => c.DateOfDeath);
-        public DateTime? DateOfDeath
-        {
-            get { return GetProperty(DateOfDeathProperty); }
-            set { SetProperty(DateOfDeathProperty, value); }
         }
     }
 }

@@ -7,6 +7,7 @@
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
     mc:Ignorable="d">
     <d:Page.DataContext>
+        <!-- Switch to local:CslaClass and it failing (compile- and runtime still works) -->
         <local:PlainClass></local:PlainClass>
     </d:Page.DataContext>
 

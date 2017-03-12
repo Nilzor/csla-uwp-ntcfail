@@ -25,13 +25,11 @@ namespace UwpApp
         public MainPage()
         {
             this.InitializeComponent();
-            Customer cust = new Customer();
+            CslaClass cust = new CslaClass();
             cust.Name = "Hans";
             cust.Age = 14;
             cust.Age += 1;
-            cust.DateOfDeath = DateTime.Now;
             DataContext = cust;
-
         }
     }
 }
